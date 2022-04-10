@@ -1,0 +1,17 @@
+noremap ' ;
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
+" gS prefix is added for ViEmu, no use for VsVim AFAIK.
+"VsVim and ViEmu are disabled until PeasyMotion finishes
+
+"Whole viewport jump-to-word beginning mode:
+nnoremap <Space> gS:vsc Tools.InvokePeasyMotion<CR>
+
+"Select text from current caret position to desired jump label (fwd and reverse directions supported)
+nmap hh gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
+
+"Jump to any open document tab
+nmap tt gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>

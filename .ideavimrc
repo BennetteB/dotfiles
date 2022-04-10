@@ -1,0 +1,14 @@
+noremap ' ;
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+inoremap jk <Esc>
+:map <leader>q <Action>(QuickJavaDoc)
+:map <leader>d <Action>(QuickImplementations)
+:map <leader>e <Action>(ShowErrorDescription)
+
+
+set easymotion
